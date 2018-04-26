@@ -1,7 +1,8 @@
 package ganderpoke.enumerations;
 
 public enum Suit {
-    CLUBS, DIAMONDS, HEARTS, SPADES, NOT_RELEVANT;
+    CLUBS("CLUBS"), DIAMONDS("DIAMONDS"), HEARTS("HEARTS"), SPADES("SPADES"),
+    NOT_RELEVANT("NOT_RELEVANT");
 
     private final String name;
 
