@@ -1,16 +1,20 @@
 package ganderpoke.core;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Turn {
 
-    private boolean onTurn;
+        //List of players
+    private List<Player> players = new ArrayList<>();
     
-        // Check whether the player is currently on turn
-    public boolean isOnTurn() {
-        return this.onTurn;
+    //Get players
+    public List<Player> getCurrentPlayer() {
+       return this.players;
     }
-
-    // Set the player to be on turn
-    public void setOnTurn(boolean onTurn) {
-        this.onTurn = onTurn;
+    
+    //Set players
+    public void setCurrentPlayer(List<Player> players) {
+        this.players = players;
     }
 }
