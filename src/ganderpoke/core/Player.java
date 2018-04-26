@@ -8,6 +8,8 @@ public class Player {
     //Points of the player
     private int score;
     
+
+    
     //Player constructor.
     public Player(Hand hand) {
         this.hand = hand;
@@ -18,6 +20,20 @@ public class Player {
         return this.hand;
     }
 
+    private Square square;
+        
+    public void pickUpCard() {
+        
+        Square = Game.getSquare();
+        Card pickUpCard = null;
+        do {
+            pickUpCard = square.SelectCard();
+            getHand().addCard(pickUpCard);
+        }while (!game.isValid(pickUpCard))
+        
+    }
+    
+    
     // Return the score for player
     public int getScore() {
         return this.score;

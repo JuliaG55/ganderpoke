@@ -1,21 +1,16 @@
 package ganderpoke;
 
-import ganderpoke.core.Hand;
-import ganderpoke.core.Player;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Scanner;
+
 
 public class Main {
 
     public static void main(String[] args) {
-        
-        // Instantiate game
-        List<Player> players = new ArrayList<>();
-        Player player1 = new Player(new Hand());
-        Player player2 = new Player(new Hand());
-
-        players.add(player1);
-        players.add(player2);
+        int choose;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to Ganderpoke Game");
+        System.out.println("Enter number of rounds: 0 - 10");
+        choose = input.nextInt();
 
     }
 

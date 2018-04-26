@@ -4,11 +4,7 @@ import ganderpoke.enumerations.Rank;
 import ganderpoke.enumerations.Status;
 import ganderpoke.enumerations.Suit;
 
-public class Hand extends Card{
-
-    public Hand(Rank rank, Suit suit, Status status){
-        super(rank, suit, status);
-    }
+public class Hand {
 
     // Uncover all cards in the hand
     public void uncoverHandCards() {
@@ -24,5 +20,17 @@ public class Hand extends Card{
         }
 
         return false;
+    }
+    
+    public void addCardToHand() {
+        
+    }
+    
+    public void removeHandCard() {
+        
+    }
+    
+    public void hideCards(){
+        
     }
 }

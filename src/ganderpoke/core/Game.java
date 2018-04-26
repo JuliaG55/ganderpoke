@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Game {
+
     
     //List of players
     private List<Player> players = new ArrayList<>();
@@ -32,6 +33,15 @@ public class Game {
     public void setSquare(Square square) {
         this.square = square;
     }
+    
+        //************************************************************************
 
+    private void PlayRounds() {
+        
+    }
+    
+    private void PlayTurns() {
+        
+    }
     
 }

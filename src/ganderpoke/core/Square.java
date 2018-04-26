@@ -18,5 +18,14 @@ public class Square {
         this.square = square;
     }
     
-    
+    // Check if there are unexposed cards on the square
+    public boolean hasFaceDownCards() {
+        for (Card card : this.getCards()) {
+            if (card.getStatus() == Status.FaceDown) {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
